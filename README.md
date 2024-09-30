@@ -14,7 +14,7 @@ This project is part of the IDS 702: Data Engineering course and demonstrates ho
 * Cross-Version Support: Ensures consistent behavior across Python versions, minimizing version-specific issues.
 
 ### How It Works
-* The `hello.yml` file in the `.github/workflows/` configures the GitHub Actions workflow. It uses the setup-python action and a matrix to test different Python versions.
+* The `hello.yml` file in the `.github/workflows/` folder configures the GitHub Actions workflow. It uses the setup-python action and a matrix to test different Python versions.
 * When changes are pushed to the repository, tests in `test_main.py` automatically validate the functionality of `main.py` across Python 3.7, 3.8, 3.9, and 3.11.
 
 This repository includes the following components:
