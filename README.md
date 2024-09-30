@@ -1,11 +1,21 @@
 [![CI](https://github.com/nogibjj/ailina_aniwan_project_1/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/ailina_aniwan_project_1/actions/workflows/hello.yml)
 
 
-# IDS706 - Mini Project 1 - Ailina Aniwan
+# IDS706 - Mini Project 4 - Ailina Aniwan
 
-## Python GitHub Template
+## GitHub Actions Matrix Build for Multiple Python Versions
 
-This repository is used for my first Data Engineering assignment in IDS 706. It serves as a template for future assignments in this course.
+### Project Overview
+This project is part of the IDS 702: Data Engineering course and demonstrates how to ensure Python code compatibility across different environments using GitHub Actions. By configuring a matrix strategy, the workflow tests Python versions 3.8, 3.9, and 3.10, ensuring consistent performance and stability across these versions.
+
+### Key Features
+* Matrix Strategy: Tests run across Python 3.8, 3.9, and 3.10 in parallel.
+* Automated Testing: Each commit triggers tests, providing immediate feedback on code compatibility.
+* Cross-Version Support: Ensures consistent behavior across Python versions, minimizing version-specific issues.
+
+### How It Works
+* The `hello.yml` file in the `.github/workflows/` configures the GitHub Actions workflow. It uses the setup-python action and a matrix to test different Python versions.
+* When changes are pushed to the repository, tests in `test_main.py` automatically validate the functionality of `main.py` across Python 3.8, 3.9, and 3.10.
 
 This repository includes the following components:
 
@@ -21,7 +31,9 @@ This repository includes the following components:
 
 * `Dockerfile`
 
-The purpose of this project is to demonstrate a basic Python program with a function called add(x, y) that takes two numbers as input. It rounds the first number up, rounds the second number down, and then returns their sum. The function is tested in the test_main.py file to ensure it works as expected.
+### Requirements
+* Set up a GitHub Actions workflow
+* Test across at least 3 different Python versions
 
 ![requirements](image.jpg)
 
